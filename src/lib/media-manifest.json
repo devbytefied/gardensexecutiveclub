@@ -1,0 +1,1174 @@
+{
+  "magnolia-poster": {
+    "slug": "magnolia-poster",
+    "alt": "The Magnolia by Ebony OH — luxury tea society brunch invitation",
+    "grade": "none",
+    "width": 1792,
+    "height": 2400,
+    "aspect": 0.7467,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      1792
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 429
+      },
+      {
+        "w": 480,
+        "h": 643
+      },
+      {
+        "w": 640,
+        "h": 857
+      },
+      {
+        "w": 720,
+        "h": 964
+      },
+      {
+        "w": 960,
+        "h": 1286
+      },
+      {
+        "w": 1280,
+        "h": 1714
+      },
+      {
+        "w": 1600,
+        "h": 2143
+      },
+      {
+        "w": 1792,
+        "h": 2400
+      }
+    ],
+    "bytes": 1007338,
+    "skipped": false
+  },
+  "magnolia-brunch": {
+    "slug": "magnolia-brunch",
+    "alt": "The Magnolia by Ebony OH — luxury tea society brunch, Sunday 18 October 2026, with special guest Carla Stephens of Rockstar Trucking Corporation",
+    "grade": "none",
+    "width": 1254,
+    "height": 1254,
+    "aspect": 1,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1254
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 320
+      },
+      {
+        "w": 480,
+        "h": 480
+      },
+      {
+        "w": 640,
+        "h": 640
+      },
+      {
+        "w": 720,
+        "h": 720
+      },
+      {
+        "w": 960,
+        "h": 960
+      },
+      {
+        "w": 1254,
+        "h": 1254
+      }
+    ],
+    "bytes": 414878,
+    "skipped": false
+  },
+  "shatter-field": {
+    "slug": "shatter-field",
+    "alt": "Shards of glass suspended against black",
+    "grade": "none",
+    "width": 2400,
+    "height": 870,
+    "aspect": 2.7586,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      2000
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 116
+      },
+      {
+        "w": 480,
+        "h": 174
+      },
+      {
+        "w": 640,
+        "h": 232
+      },
+      {
+        "w": 720,
+        "h": 261
+      },
+      {
+        "w": 960,
+        "h": 348
+      },
+      {
+        "w": 1280,
+        "h": 464
+      },
+      {
+        "w": 1600,
+        "h": 580
+      },
+      {
+        "w": 2000,
+        "h": 725
+      }
+    ],
+    "bytes": 46748,
+    "skipped": false
+  },
+  "heritage-lounge": {
+    "slug": "heritage-lounge",
+    "alt": "A lounge with a gilded mirror, marble fireplace and velvet chairs",
+    "grade": "none",
+    "width": 1000,
+    "height": 1432,
+    "aspect": 0.6983,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1000
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 458
+      },
+      {
+        "w": 480,
+        "h": 687
+      },
+      {
+        "w": 640,
+        "h": 916
+      },
+      {
+        "w": 720,
+        "h": 1031
+      },
+      {
+        "w": 960,
+        "h": 1375
+      },
+      {
+        "w": 1000,
+        "h": 1432
+      }
+    ],
+    "bytes": 428792,
+    "skipped": false
+  },
+  "carriage": {
+    "slug": "carriage",
+    "alt": "A white wrought-iron carriage standing among the trees",
+    "grade": "none",
+    "width": 2560,
+    "height": 1707,
+    "aspect": 1.4997,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 480,
+        "h": 320
+      },
+      {
+        "w": 640,
+        "h": 427
+      },
+      {
+        "w": 720,
+        "h": 480
+      },
+      {
+        "w": 960,
+        "h": 640
+      }
+    ],
+    "bytes": 233146,
+    "skipped": false
+  },
+  "glass-ceiling-mall": {
+    "slug": "glass-ceiling-mall",
+    "alt": "A portrait drawn in shattered glass, installed before the Washington Monument",
+    "grade": "none",
+    "width": 650,
+    "height": 977,
+    "aspect": 0.6653,
+    "widths": [
+      320,
+      480,
+      640,
+      650
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 481
+      },
+      {
+        "w": 480,
+        "h": 721
+      },
+      {
+        "w": 640,
+        "h": 962
+      },
+      {
+        "w": 650,
+        "h": 977
+      }
+    ],
+    "bytes": 108346,
+    "skipped": false
+  },
+  "salon": {
+    "slug": "salon",
+    "alt": "The main salon set for a members' gathering",
+    "grade": "duotone",
+    "width": 1280,
+    "height": 960,
+    "aspect": 1.3333,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 240
+      },
+      {
+        "w": 480,
+        "h": 360
+      },
+      {
+        "w": 640,
+        "h": 480
+      },
+      {
+        "w": 720,
+        "h": 540
+      },
+      {
+        "w": 960,
+        "h": 720
+      },
+      {
+        "w": 1280,
+        "h": 960
+      }
+    ],
+    "bytes": 150570,
+    "skipped": false
+  },
+  "salon-west": {
+    "slug": "salon-west",
+    "alt": "The salon, west wing",
+    "grade": "duotone",
+    "width": 1600,
+    "height": 1200,
+    "aspect": 1.3333,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 240
+      },
+      {
+        "w": 480,
+        "h": 360
+      },
+      {
+        "w": 640,
+        "h": 480
+      },
+      {
+        "w": 720,
+        "h": 540
+      },
+      {
+        "w": 960,
+        "h": 720
+      },
+      {
+        "w": 1280,
+        "h": 960
+      },
+      {
+        "w": 1600,
+        "h": 1200
+      }
+    ],
+    "bytes": 322928,
+    "skipped": false
+  },
+  "salon-east": {
+    "slug": "salon-east",
+    "alt": "The salon, east wing",
+    "grade": "duotone",
+    "width": 1600,
+    "height": 1200,
+    "aspect": 1.3333,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 240
+      },
+      {
+        "w": 480,
+        "h": 360
+      },
+      {
+        "w": 640,
+        "h": 480
+      },
+      {
+        "w": 720,
+        "h": 540
+      },
+      {
+        "w": 960,
+        "h": 720
+      },
+      {
+        "w": 1280,
+        "h": 960
+      },
+      {
+        "w": 1600,
+        "h": 1200
+      }
+    ],
+    "bytes": 354258,
+    "skipped": false
+  },
+  "salon-detail": {
+    "slug": "salon-detail",
+    "alt": "A table laid for a members' luncheon",
+    "grade": "duotone",
+    "width": 1600,
+    "height": 1200,
+    "aspect": 1.3333,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 240
+      },
+      {
+        "w": 480,
+        "h": 360
+      },
+      {
+        "w": 640,
+        "h": 480
+      },
+      {
+        "w": 720,
+        "h": 540
+      },
+      {
+        "w": 960,
+        "h": 720
+      },
+      {
+        "w": 1280,
+        "h": 960
+      },
+      {
+        "w": 1600,
+        "h": 1200
+      }
+    ],
+    "bytes": 295072,
+    "skipped": false
+  },
+  "dining": {
+    "slug": "dining",
+    "alt": "A round glass table in the dining room",
+    "grade": "duotone",
+    "width": 2048,
+    "height": 1365,
+    "aspect": 1.5004,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      2000
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 480,
+        "h": 320
+      },
+      {
+        "w": 640,
+        "h": 426
+      },
+      {
+        "w": 720,
+        "h": 480
+      },
+      {
+        "w": 960,
+        "h": 640
+      },
+      {
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "w": 1600,
+        "h": 1066
+      },
+      {
+        "w": 2000,
+        "h": 1333
+      }
+    ],
+    "bytes": 211464,
+    "skipped": false
+  },
+  "parlour": {
+    "slug": "parlour",
+    "alt": "The parlour",
+    "grade": "duotone",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1200
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 427
+      },
+      {
+        "w": 480,
+        "h": 640
+      },
+      {
+        "w": 640,
+        "h": 853
+      },
+      {
+        "w": 720,
+        "h": 960
+      },
+      {
+        "w": 960,
+        "h": 1280
+      },
+      {
+        "w": 1200,
+        "h": 1600
+      }
+    ],
+    "bytes": 218634,
+    "skipped": false
+  },
+  "lounge": {
+    "slug": "lounge",
+    "alt": "A sitting room with velvet seating",
+    "grade": "duotone",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1200
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 427
+      },
+      {
+        "w": 480,
+        "h": 640
+      },
+      {
+        "w": 640,
+        "h": 853
+      },
+      {
+        "w": 720,
+        "h": 960
+      },
+      {
+        "w": 960,
+        "h": 1280
+      },
+      {
+        "w": 1200,
+        "h": 1600
+      }
+    ],
+    "bytes": 421952,
+    "skipped": false
+  },
+  "founder": {
+    "slug": "founder",
+    "alt": "The founder addressing members outdoors",
+    "grade": "duotone",
+    "width": 2497,
+    "height": 2249,
+    "aspect": 1.1103,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      2000
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 288
+      },
+      {
+        "w": 480,
+        "h": 432
+      },
+      {
+        "w": 640,
+        "h": 576
+      },
+      {
+        "w": 720,
+        "h": 648
+      },
+      {
+        "w": 960,
+        "h": 865
+      },
+      {
+        "w": 1280,
+        "h": 1153
+      },
+      {
+        "w": 1600,
+        "h": 1441
+      },
+      {
+        "w": 2000,
+        "h": 1801
+      }
+    ],
+    "bytes": 220258,
+    "skipped": false
+  },
+  "gathering-a": {
+    "slug": "gathering-a",
+    "alt": "Members gathered at a club evening",
+    "grade": "duotone",
+    "width": 2560,
+    "height": 1707,
+    "aspect": 1.4997,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      2000
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 480,
+        "h": 320
+      },
+      {
+        "w": 640,
+        "h": 427
+      },
+      {
+        "w": 720,
+        "h": 480
+      },
+      {
+        "w": 960,
+        "h": 640
+      },
+      {
+        "w": 1280,
+        "h": 854
+      },
+      {
+        "w": 1600,
+        "h": 1067
+      },
+      {
+        "w": 2000,
+        "h": 1334
+      }
+    ],
+    "bytes": 231364,
+    "skipped": false
+  },
+  "gathering-b": {
+    "slug": "gathering-b",
+    "alt": "A conversation at a members' gathering",
+    "grade": "duotone",
+    "width": 2560,
+    "height": 1707,
+    "aspect": 1.4997,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      2000
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 480,
+        "h": 320
+      },
+      {
+        "w": 640,
+        "h": 427
+      },
+      {
+        "w": 720,
+        "h": 480
+      },
+      {
+        "w": 960,
+        "h": 640
+      },
+      {
+        "w": 1280,
+        "h": 854
+      },
+      {
+        "w": 1600,
+        "h": 1067
+      },
+      {
+        "w": 2000,
+        "h": 1334
+      }
+    ],
+    "bytes": 232016,
+    "skipped": false
+  },
+  "gathering-c": {
+    "slug": "gathering-c",
+    "alt": "Guests arriving at a GEC event",
+    "grade": "duotone",
+    "width": 1920,
+    "height": 2560,
+    "aspect": 0.75,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      1920
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 427
+      },
+      {
+        "w": 480,
+        "h": 640
+      },
+      {
+        "w": 640,
+        "h": 853
+      },
+      {
+        "w": 720,
+        "h": 960
+      },
+      {
+        "w": 960,
+        "h": 1280
+      },
+      {
+        "w": 1280,
+        "h": 1707
+      },
+      {
+        "w": 1600,
+        "h": 2133
+      },
+      {
+        "w": 1920,
+        "h": 2560
+      }
+    ],
+    "bytes": 368646,
+    "skipped": false
+  },
+  "gathering-d": {
+    "slug": "gathering-d",
+    "alt": "A member at a GEC gathering",
+    "grade": "duotone",
+    "width": 1707,
+    "height": 2560,
+    "aspect": 0.6668,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      1707
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 481
+      },
+      {
+        "w": 480,
+        "h": 720
+      },
+      {
+        "w": 640,
+        "h": 960
+      },
+      {
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "w": 960,
+        "h": 1440
+      },
+      {
+        "w": 1280,
+        "h": 1920
+      },
+      {
+        "w": 1600,
+        "h": 2400
+      },
+      {
+        "w": 1707,
+        "h": 2560
+      }
+    ],
+    "bytes": 406808,
+    "skipped": false
+  },
+  "gathering-e": {
+    "slug": "gathering-e",
+    "alt": "An evening at the clubhouse",
+    "grade": "duotone",
+    "width": 1707,
+    "height": 2560,
+    "aspect": 0.6668,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      1707
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 481
+      },
+      {
+        "w": 480,
+        "h": 720
+      },
+      {
+        "w": 640,
+        "h": 960
+      },
+      {
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "w": 960,
+        "h": 1440
+      },
+      {
+        "w": 1280,
+        "h": 1920
+      },
+      {
+        "w": 1600,
+        "h": 2400
+      },
+      {
+        "w": 1707,
+        "h": 2560
+      }
+    ],
+    "bytes": 399990,
+    "skipped": false
+  },
+  "research-flexibility": {
+    "slug": "research-flexibility",
+    "alt": "The Power of Flexibility — joint report cover",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 23530,
+    "skipped": false
+  },
+  "research-bain": {
+    "slug": "research-bain",
+    "alt": "Research report cover",
+    "grade": "none",
+    "width": 350,
+    "height": 232,
+    "aspect": 1.5086,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 212
+      },
+      {
+        "w": 350,
+        "h": 232
+      }
+    ],
+    "bytes": 11148,
+    "skipped": false
+  },
+  "research-gender-data": {
+    "slug": "research-gender-data",
+    "alt": "Gender data reporting cover",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 14846,
+    "skipped": false
+  },
+  "research-critical-steps": {
+    "slug": "research-critical-steps",
+    "alt": "Critical steps to gender parity",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 8382,
+    "skipped": false
+  },
+  "research-stem": {
+    "slug": "research-stem",
+    "alt": "Engaging the future of STEM",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 7208,
+    "skipped": false
+  },
+  "research-top": {
+    "slug": "research-top",
+    "alt": "What stops women reaching the top",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 27174,
+    "skipped": false
+  },
+  "research-jobs": {
+    "slug": "research-jobs",
+    "alt": "Jobs and growth",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 9500,
+    "skipped": false
+  },
+  "research-federal": {
+    "slug": "research-federal",
+    "alt": "Federal budget response",
+    "grade": "none",
+    "width": 350,
+    "height": 233,
+    "aspect": 1.5021,
+    "widths": [
+      320,
+      350
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 213
+      },
+      {
+        "w": 350,
+        "h": 233
+      }
+    ],
+    "bytes": 21368,
+    "skipped": false
+  },
+  "march": {
+    "slug": "march",
+    "alt": "A crowd at a women's rights demonstration",
+    "grade": "none",
+    "width": 1920,
+    "height": 1080,
+    "aspect": 1.7778,
+    "widths": [
+      320,
+      480,
+      640,
+      720,
+      960,
+      1280,
+      1600,
+      1920
+    ],
+    "files": [
+      {
+        "w": 320,
+        "h": 180
+      },
+      {
+        "w": 480,
+        "h": 270
+      },
+      {
+        "w": 640,
+        "h": 360
+      },
+      {
+        "w": 720,
+        "h": 405
+      },
+      {
+        "w": 960,
+        "h": 540
+      },
+      {
+        "w": 1280,
+        "h": 720
+      },
+      {
+        "w": 1600,
+        "h": 900
+      },
+      {
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "bytes": 648440,
+    "skipped": false
+  }
+}

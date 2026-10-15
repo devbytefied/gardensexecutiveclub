@@ -1,0 +1,66 @@
+# Redirect map — old WordPress URLs → new static routes
+#
+# Netlify and Cloudflare Pages read this file directly.
+# For nginx or Apache, translate each line into the equivalent directive.
+# The old site ran WordPress at the domain root, so every path below is a
+# path that was live and may still be in an index somewhere.
+
+# ---- Legacy about-us sub-pages → flattened routes --------------------
+/about-us/our-board/       /our-board/          301
+/about-us/our-members/     /our-members/        301
+/about-us/our-history/     /our-history/        301
+/about-us/finding-your-voice/ /finding-your-voice/ 301
+/about-us/annual-dinner/   /annual-dinner/      301
+/about-us/annual-review/   /annual-review/      301
+/about-us/gec-summit/      /gec-summit/         301
+/about-us/donations/       /donations/          301
+/about-us/donations-faqs/  /donations-faq/      301
+/about-us/work-with-us/    /work-with-us/       301
+/about-us/                 /about/              301
+
+# ---- Legacy top-level pages -----------------------------------------
+/about-us/                 /about/              301
+/leadership/               /leadership/          301
+/leadership/gec-connect/   /gec-connect/         301
+/contact-us/               /contact/             301
+/contact/                  /contact/             301
+/privacy-policy-2/         /privacy/             301
+/privacy-policy/           /privacy/             301
+/terms-of-use-agreement/   /terms/               301
+/terms/                    /terms/               301
+
+# ---- Signature events -----------------------------------------------
+# The index is now "Upcoming Events". Detail routes keep their original
+# paths, so every existing link into a specific gathering still lands.
+/signature-events/         /events/                301
+/events/                   /signature-events/    200
+/calendar/                 /events/               301
+/executive-private-reveal/ /the-magnolia/        301
+
+# ---- WordPress plumbing that no longer exists -----------------------
+# These were never content. 410 tells crawlers they are gone for good
+# rather than inviting a re-crawl.
+/feed/                     /                     410
+/comments/feed/            /                     410
+/calendar/*                /                     410
+/xmlrpc.php                /                     410
+/wp-content/*              /                     410
+/wp-includes/*             /                     410
+/wp-json/*                 /                     410
+/wp-admin/                 /                     410
+
+# ---- Trailing-slash tolerance --------------------------------------
+# The export writes /about/index.html; some hosts serve the bare path too.
+/about                    /about/               301
+/membership               /membership/          301
+/apply                    /apply/               301
+/nominate                 /nominate/            301
+/our-members              /our-members/         301
+/our-history              /our-history/         301
+/our-board                /our-board/           301
+/contact                  /contact/             301
+/events                   /events/              301
+/the-magnolia             /the-magnolia/        301
+/epk                      /epk/                 301
+/venue                    /venue/               301
+/book                     /epk/                 301

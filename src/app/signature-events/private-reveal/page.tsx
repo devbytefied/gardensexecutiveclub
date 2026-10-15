@@ -1,0 +1,10 @@
+﻿import { EventPage, eventMetadata } from "@/components/EventPage";
+import { eventsBySlug } from "@/lib/events";
+
+const event = eventsBySlug["private-reveal"];
+
+export const metadata = eventMetadata(event);
+
+export default function Page() {
+  return <EventPage event={event} />;
+}

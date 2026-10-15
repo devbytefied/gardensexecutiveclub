@@ -1,0 +1,32 @@
+# Cache and security headers
+# Netlify / Cloudflare Pages read this file. Translate for nginx or Apache.
+
+# Hashed build assets never change — cache them hard.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pre-rendered photography is content-hashed by filename.
+/media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML is re-exported on every deploy; revalidate, but allow a short window.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+# ---- Security --------------------------------------------------------
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-DNS-Prefetch-Control: off
+
+# This is a static site: no inline event handlers, no eval, no plugins.
+# Everything it loads is first-party except the EmailJS transport and the
+# social profile links, which are plain anchors.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://api.emailjs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.emailjs.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'

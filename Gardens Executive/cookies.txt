@@ -1,9 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-gardensexecutiveclub.com	TRUE	/	FALSE	1999999999	__cf_bm	Td_elZ9vWX3gExr4EFLF_JC0tVUATjVs2jLZch_aBb8-1790421953.6778548-1.0.1.1-3Zjpij_NBfuEzHLmj3JqvidYYLcaDk0RXRtaA6zBPl0sbIQylGKVzkp65xa73WpcbTGaU3fXyYnubK8C.ONPdznWSoSFb1jy3CJoQQRZzgMD.rn2iGUCDkxvkzDdAbcV
-gardensexecutiveclub.com	TRUE	/	FALSE	1999999999	SameSite	None
-static.ctctcdn.com	TRUE	/	FALSE	1999999999	__cf_bm	lXc1EDLdt8ljOSsrO4H6f6sfTE6BfrH.DtjIhiILKVQ-1790422130.916511-1.0.1.1-ftJApC7V28daEiyt.SYqvfvRxXDDFqwDQy4bGar1e9fBDFDqKvFtxRAg.Jtn21e5EFIDgiUvPk8YwWrGtDUBP2ZOSEEAmOLl6SKQvFqTmy8ohk_IFlHIc2NTe_qZAbWn
-static.ctctcdn.com	TRUE	/	FALSE	1999999999	SameSite	None
-imgssl.constantcontact.com	TRUE	/	FALSE	1999999999	__cf_bm	HL6R.1ClRZ6Q1T57_hsh7aH15Y5.iMqPLrGSdnFl2ng-1790422165.2137573-1.0.1.1-LmW4E1hKdYjVEFm7CB92jCZY5Xsa6eIhHzvKIGvmxE7AI7NS_G8Zeq0UaDnCPfXl1yI8X5FupDD1tnbJxv1oqlRZGhOKmCThmjv7lmq85kXU5UceP8QFkUJwPzuxsbLw
-constantcontact.com	TRUE	/	FALSE	1999999999	SameSite	None
-

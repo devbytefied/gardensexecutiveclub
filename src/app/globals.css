@@ -1,26 +1,554 @@
+/* ------------------------------------------------------------------ *
+   The Garden's Executive Club — design tokens
+ *
+   Built from the club's own brand palette, taken from the original
+   site: dusty rose #c7827d, deep teal #264d49, sage #7d8a79, warm
+   brown #a0695c, and the rose crest.
+ *
+   The raw brand hexes do not survive contact with accessibility
+   requirements — rose on cream is 2.9:1, sage on teal is 2.6:1. So
+   every hue is carried in two forms:
+ *
+     • the original value, kept for FILLS and large display
+     • a lightened or deepened variant, for anything that is TEXT
+ *
+   Lightness was moved, hue was not. That is why this still reads as
+   the same club.
+ * ------------------------------------------------------------------ */
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------ *
+   Optional licensed faces — Canela + Söhne (Klim Type Foundry)
+   Drop the .woff2 files into public/fonts/ and they take precedence
+   over the Instrument fallbacks. Absent files simply never match, so
+   the stack degrades cleanly with no build-time file check.
+ * ------------------------------------------------------------------ */
+
+@font-face {
+  font-family: "Canela";
+  src: url("/fonts/Canela-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canela";
+  src: url("/fonts/Canela-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("/fonts/Sohne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("/fonts/Sohne-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  /* ---- Grounds -------------------------------------------------- */
+  --color-cream: #faf7f2; /* default page ground          */
+  --color-parchment: #f2ece2; /* cards, stripes              */
+  --color-bone: #fffdf9; /* raised / hover state          */
+
+  /* The dark ground is the emphasis ground. It is NOT the default. */
+  --color-teal: #264d49;
+  --color-teal-deep: #1c3a36;
+  --color-teal-soft: #2f5f5a;
+
+  /* ---- Brand accents -------------------------------------------- */
+  /* Original brand values — fills and large display only. */
+  --color-rose: #c7827d;
+  --color-sage: #7d8a79;
+  --color-brown: #a0695c;
+
+  /* Text-safe variants. */
+  --color-rose-deep: #a95049; /* 5.00:1 cream ? 4.55:1 parchment */
+  --color-rose-light: #d8a9a5; /* 4.53:1 on teal        */
+  --color-sage-deep: #646e60; /* 4.99:1 cream ? 4.53:1 parchment */
+  --color-sage-light: #afb7ac; /* 4.55:1 on teal        */
+  --color-brown-deep: #915f54; /* 4.95:1 cream ? 4.50:1 parchment */
+  --color-brown-light: #c39a8e; /* on teal         */
+
+  /* ---- Text ------------------------------------------------------ */
+  --color-ink: #2f3436; /* 11.80:1 on cream */
+  --color-ink-soft: #4d5457; /* secondary on cream */
+  --color-ink-mute: #656d6f; /* 4.95:1 cream ? 4.50:1 parchment */
+  --color-cream-soft: #e8e3da; /* 7.33:1 on teal */
+  --color-cream-mute: #c8cecb; /* 5.87:1 teal ? 4.52:1 teal-soft */
+
+  /* ---- Type ----------------------------------------------------- */
+  --font-display: "Canela", var(--font-instrument-serif), Georgia, serif;
+  --font-sans: "Sohne", var(--font-instrument-sans), ui-sans-serif, system-ui,
+    sans-serif;
+
+  /* ---- Motion --------------------------------------------------- */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ---- Layout --------------------------------------------------- */
+  --spacing-gutter: 1.5rem;
+
+  /* ---- Border levels (see rules below) -------------------------- */
+  --rule-faint: color-mix(in oklab, var(--color-ink) 10%, transparent);
+  --rule: color-mix(in oklab, var(--color-ink) 16%, transparent);
+  --rule-strong: color-mix(in oklab, var(--color-rose-deep) 55%, transparent);
+  --rule-faint-dark: color-mix(in oklab, var(--color-cream) 16%, transparent);
+  --rule-dark: color-mix(in oklab, var(--color-cream) 24%, transparent);
+  --rule-strong-dark: color-mix(in oklab, var(--color-rose-light) 40%, transparent);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 768px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --spacing-gutter: 2.5rem;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+   Base
+ * ------------------------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+  border-color: currentColor;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "calt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-rose);
+  color: var(--color-cream);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-rose-deep);
+  outline-offset: 3px;
+}
+
+.on-dark :focus-visible {
+  outline-color: var(--color-rose-light);
+}
+
+/* ------------------------------------------------------------------ *
+   Type scale — a fixed ladder.
+   Nothing on this site is rendered below 0.72rem. The eyebrow is the
+   floor, and it is the only thing allowed to sit there.
+ * ------------------------------------------------------------------ */
+
+:root {
+  --fs-display: clamp(2.6rem, 7vw, 6rem);
+  --fs-head: clamp(1.85rem, 4vw, 3rem);
+  --fs-sub: clamp(1.4rem, 2.6vw, 2.1rem);
+  --fs-lead: clamp(1.0625rem, 1.35vw, 1.25rem);
+  --fs-body: 1.0625rem;
+  --fs-meta: 0.875rem;
+  --fs-eyebrow: 0.72rem;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.022em;
+  font-size: var(--fs-display);
+  text-wrap: balance;
+}
+
+.display-sm {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  font-size: var(--fs-head);
+  text-wrap: balance;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.014em;
+  font-size: var(--fs-sub);
+  text-wrap: balance;
+}
+
+/* The connective tissue of the whole system, and the size floor. */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.lede {
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+}
+
+.on-dark .lede {
+  color: var(--color-cream-soft);
+}
+
+.measure {
+  max-width: 64ch;
+}
+
+.tnum {
+  font-variant-numeric: oldstyle-nums;
+  font-feature-settings: "onum" 1;
+}
+
+.lnum {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* ------------------------------------------------------------------ *
+   Grounds
+ *
+   The site is light-dominant. cream is the default; teal is the
+   emphasis. `on-light` / `on-dark` travel with the ground, so every
+   nested colour stays correct without per-section overrides.
+ * ------------------------------------------------------------------ */
+
+.ground-cream {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+.ground-parchment {
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+}
+.ground-bone {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+}
+
+/* `ground-ink` is the legacy name for the dark ground, which is the
+   club's deep teal. Keeping the name means every existing section
+   keeps its correct `on-dark` colouring. */
+.ground-ink {
+  background-color: var(--color-teal);
+  color: var(--color-cream);
+}
+.ground-emerald {
+  background-color: var(--color-teal-deep);
+  color: var(--color-cream);
+}
+
+.muted {
+  color: var(--color-ink-soft);
+}
+.meta {
+  color: var(--color-ink-mute);
+}
+
+/* Any dark ground, however it is spelled, flips both helpers. */
+.on-dark .muted,
+.ground-ink .muted,
+.ground-emerald .muted {
+  color: var(--color-cream-soft);
+}
+.on-dark .meta,
+.ground-ink .meta,
+.ground-emerald .meta {
+  color: var(--color-cream-mute);
+}
+
+.on-light .accent {
+  color: var(--color-rose-deep);
+}
+.on-dark .accent {
+  color: var(--color-rose-light);
+}
+
+/* ------------------------------------------------------------------ *
+   Rules — three levels, and no others.
+   Components read these; pages never spell an opacity.
+ * ------------------------------------------------------------------ */
+
+.rule-accent {
+  border-top: 1px solid var(--rule-strong);
+}
+.rule-on-dark {
+  border-top: 1px solid var(--rule-dark);
+}
+.rule-on-light {
+  border-top: 1px solid var(--rule);
+}
+
+/* Aliases so a section can name the level it wants without knowing
+   which ground it is sitting on. */
+.rule-y-faint {
+  border-block: 1px solid var(--rule-faint);
+}
+.rule-y-faint.on-dark,
+.on-dark .rule-y-faint {
+  border-block-color: var(--rule-faint-dark);
+}
+
+.hair-faint {
+  border-color: var(--rule-faint);
+}
+.on-dark .hair-faint,
+.hair-faint.on-dark {
+  border-color: var(--rule-faint-dark);
+}
+
+.hair {
+  border-color: var(--rule);
+}
+.on-dark .hair,
+.hair.on-dark {
+  border-color: var(--rule-dark);
+}
+
+.hair-strong {
+  border-color: var(--rule-strong);
+}
+.on-dark .hair-strong,
+.hair-strong.on-dark {
+  border-color: var(--rule-strong-dark);
+}
+
+/* ------------------------------------------------------------------ *
+   Links
+ * ------------------------------------------------------------------ */
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.45s var(--ease-editorial);
+}
+
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* ------------------------------------------------------------------ *
+   Prose
+ * ------------------------------------------------------------------ */
+
+.prose-gec {
+  font-size: var(--fs-body);
+  line-height: 1.72;
+}
+.prose-gec > * + * {
+  margin-top: 1.4em;
+}
+.prose-gec h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-sub);
+  line-height: 1.14;
+  letter-spacing: -0.012em;
+  margin-top: 2.6em;
+  margin-bottom: 0;
+  text-wrap: balance;
+}
+.prose-gec h2:first-child {
+  margin-top: 0;
+}
+.prose-gec h3 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-rose-deep);
+  margin-top: 2.4em;
+  margin-bottom: 0;
+}
+.prose-gec h3 + * {
+  margin-top: 0.9em;
+}
+.prose-gec p {
+  max-width: 64ch;
+}
+.prose-gec a {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in oklab, var(--color-rose-deep) 60%, transparent);
+}
+.prose-gec strong {
+  font-weight: 600;
+}
+.prose-gec ul,
+.prose-gec ol {
+  padding-left: 1.15em;
+  max-width: 60ch;
+}
+.prose-gec ul {
+  list-style: none;
+  padding-left: 0;
+}
+.prose-gec ul li {
+  position: relative;
+  padding-left: 1.5em;
+}
+.prose-gec ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.65em;
+  height: 1px;
+  background-color: var(--color-rose-deep);
+}
+.prose-gec blockquote {
+  border-left: 1px solid var(--color-rose-deep);
+  padding-left: 1.5em;
+  font-family: var(--font-display);
+  font-size: 1.28em;
+  line-height: 1.4;
+}
+
+.on-dark .prose-gec {
+  color: var(--color-cream-soft);
+}
+.on-dark .prose-gec h3 {
+  color: var(--color-rose-light);
+}
+.on-dark .prose-gec blockquote {
+  border-left-color: var(--color-rose-light);
+  color: var(--color-cream);
+}
+
+/* ------------------------------------------------------------------ *
+   Motion
+ * ------------------------------------------------------------------ */
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-track {
+  animation: marquee var(--marquee-duration, 52s) linear infinite;
+  will-change: transform;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rise {
+  animation: rise 0.9s var(--ease-editorial) both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.7s var(--ease-editorial) both;
+}
+
+/* ------------------------------------------------------------------ *
+   Forms
+ * ------------------------------------------------------------------ */
+
+.field {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid color-mix(in oklab, currentColor 30%, transparent);
+  padding: 0.7rem 0;
+  font-family: inherit;
+  font-size: var(--fs-body);
+  color: inherit;
+  transition: border-color 0.3s var(--ease-editorial);
+}
+
+.field::placeholder {
+  color: var(--color-ink-mute);
+}
+
+.on-dark .field::placeholder {
+  color: var(--color-cream-mute);
+}
+
+.field:focus {
+  outline: none;
+  border-bottom-color: var(--color-rose-deep);
+}
+
+.on-dark .field:focus {
+  border-bottom-color: var(--color-rose-light);
+}
+
+.field[aria-invalid="true"] {
+  border-bottom: 2px solid var(--color-rose-deep);
+}
+
+.field-label {
+  display: block;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-ink-mute);
+  margin-bottom: 0.2rem;
+}
+
+.on-dark .field-label {
+  color: var(--color-cream-mute);
 }

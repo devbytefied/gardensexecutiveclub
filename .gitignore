@@ -17,6 +17,12 @@
 /.next/
 /out/
 
+# visual QA screenshots (pnpm shoot)
+/.qa/
+
+# licensed fonts go here at build time and are never committed
+/public/fonts/
+
 # production
 /build
 
@@ -39,3 +45,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
