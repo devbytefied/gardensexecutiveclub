@@ -213,7 +213,7 @@ export function EventsIndex() {
         eyebrow="Next"
         title="Keep going"
         items={[
-          { label: "The Magnolia", href: "/the-magnolia/", note: "Sunday 18 October 2026" },
+          { label: "The Magnolia", href: "/the-magnolia/", note: "Sunday 15 November 2026" },
           { label: "Executive Membership", href: "/membership/", note: "What membership includes" },
           { label: "Apply", href: "/apply/", note: "Start your application" },
           { label: "Book the Venue", href: "/venue/", note: "The clubhouse, for hire" },

@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Figure } from "./Figure";
 import { Button, Eyebrow } from "./ui";
 import { X } from "lucide-react";
 
@@ -22,14 +22,14 @@ import { X } from "lucide-react";
  * It appears on the homepage only, and it disappears with the event.
  */
 
-const EVENT_URL = "https://event.gardensexecutiveclub.com/";
+const EVENT_URL = "https://www.eventbrite.com/e/2003689533332?aff=oddtdtcreator";
 const SESSION_KEY = "gec-event-dismissed";
 
 const EVENT = {
   eyebrow: "You are invited",
-  title: "Two women. Two industries. One table.",
-  meta: "The Magnolia Luxury Tea Society Brunch / Sunday 18 October 2026",
-  body: "Dr. Ebony OH with special guest Carla Stephens, Founder & CEO of Rockstar Trucking Corporation. Fine tea, elevated conversation and live music, 2:00 – 5:00 PM at the clubhouse.",
+  title: "A curated table for women in business, leadership & ownership",
+  meta: "The Magnolia Luxury Tea Society Brunch / Sunday 15 November 2026",
+  body: "Hosted by Dr. Ebony OH. Fine tea, elevated conversation and live music, 2:00 – 5:00 PM at the clubhouse.",
   cta: "Request your invitation",
 };
 
@@ -142,12 +142,15 @@ export function EventPopup() {
         </button>
 
         <div className="grid sm:grid-cols-2">
-          <Figure
-            slug="magnolia-brunch"
-            sizes="(min-width: 640px) 22rem, 92vw"
-            // ratio="18/15"
-            className="h-full  w-full object-cover"
-          />
+          <div className="relative h-full w-full aspect-square">
+            <Image
+              src="/new-event-popup.jpeg"
+              alt="The Magnolia Luxury Tea Society Brunch — Sunday 15 November 2026, hosted by Dr. Ebony OH"
+              fill
+              sizes="(min-width: 640px) 22rem, 92vw"
+              className="object-cover"
+            />
+          </div>
 
           <div className="flex flex-col justify-center p-8 sm:p-10">
             <Eyebrow>{EVENT.eyebrow}</Eyebrow>
@@ -167,11 +170,13 @@ export function EventPopup() {
               {EVENT.body}
             </p>
 
-            <div className="mt-9 ">
-              <Button className="w-full" href={EVENT_URL} variant="rose" external>
+            <div className="mt-9 flex flex-col items-center gap-3 text-center">
+              <Button className="w-full justify-center" href={EVENT_URL} variant="rose" external>
+                Reserve your seat
+              </Button>
+              <Button className="w-full justify-center" href="https://event.gardensexecutiveclub.com/" variant="outline" external>
                 {EVENT.cta}
               </Button>
-           
             </div>
 
             <p className="mt-4 text-sm meta">

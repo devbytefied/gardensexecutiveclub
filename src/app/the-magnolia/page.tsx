@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Figure } from "@/components/Figure";
 import { GECForm, type Field } from "@/components/GECForm";
@@ -8,7 +9,7 @@ import { Button, Container, Eyebrow, Quote, SectionHead } from "@/components/ui"
 import { clubEvents } from "@/lib/events";
 import { site } from "@/lib/site";
 
-const EVENT_URL = "https://event.gardensexecutiveclub.com/";
+const EVENT_URL = "https://www.eventbrite.com/e/2003689533332?aff=oddtdtcreator";
 const magnolia = clubEvents[0];
 
 /** The line on the poster, and the line the invitation sells. */
@@ -51,7 +52,7 @@ const FIELDS: Field[] = [
 export const metadata: Metadata = {
   title: "The Magnolia",
   description:
-    "The Magnolia Luxury Tea Society Brunch by Ebony OH — Sunday 18 October 2026, 2:00–5:00 PM at The Garden's Executive Club. An intimate fireside chat with Dr. Ebony OH and Carla Stephens, Founder & CEO of Rockstar Trucking Corporation.",
+    "The Magnolia Luxury Tea Society Brunch by Ebony OH — Sunday 15 November 2026, 2:00–5:00 PM at The Garden's Executive Club. An intimate fireside chat with Dr. Ebony OH.",
   alternates: { canonical: "/the-magnolia/" },
 };
 
@@ -78,7 +79,7 @@ export default function MagnoliaPage() {
 
                 <dl className="hair mt-12 grid grid-cols-2 gap-x-8 gap-y-8 border-t pt-9 sm:grid-cols-4">
                   {[
-                    ["18 Oct 2026", "Sunday, by invitation"],
+                    ["15 Nov 2026", "Sunday, by invitation"],
                     ["2:00 – 5:00 PM", "three unhurried hours"],
                     ["Stone Mountain", "GA 30083"],
                     ["Fine tea", "elevated conversation, live music"],
@@ -97,8 +98,11 @@ export default function MagnoliaPage() {
                   ))}
                 </dl>
 
-                <div className="mt-12 flex flex-wrap items-center gap-x-9 gap-y-4">
+                <div className="mt-12 flex flex-wrap items-center gap-x-4 gap-y-4">
                   <Button href={EVENT_URL} variant="rose" external>
+                    Reserve your seat
+                  </Button>
+                  <Button href="https://event.gardensexecutiveclub.com/" variant="outline-light" external>
                     Request your invitation
                   </Button>
                   <p className="text-[var(--fs-meta)] meta">Opens the event site</p>
@@ -106,14 +110,16 @@ export default function MagnoliaPage() {
               </div>
 
               <div className="lg:col-span-5">
-                <Figure
-                  slug="magnolia-brunch"
-                  sizes="(min-width: 1024px) 28rem, 92vw"
-                  ratio="4/5"
-                  priority
-                  frame
-                  className="mx-auto w-full max-w-[28rem]"
-                />
+                <div className="mx-auto w-full max-w-[28rem] aspect-[4/5] relative overflow-hidden ring-1 ring-rose-deep/30 p-px bg-teal-deep">
+                  <Image
+                    src="/new-event-popup.jpeg"
+                    alt="The Magnolia Luxury Tea Society Brunch — Sunday 15 November 2026"
+                    fill
+                    sizes="(min-width: 1024px) 28rem, 92vw"
+                    priority
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -143,20 +149,7 @@ export default function MagnoliaPage() {
               </Link>
             </div>
 
-            <div className="lg:col-span-6 lg:col-start-7">
-              <Eyebrow>Special guest speaker</Eyebrow>
-              <h2 className="display-sm mt-7">Carla Stephens</h2>
-              <p className="eyebrow mt-5 !text-[0.58rem] meta">
-                Founder &amp; CEO, Rockstar Trucking Corporation
-              </p>
-              <p className="eyebrow mt-3 !text-[0.58rem] meta">
-                Entrepreneur • Transportation Leader • Industry Trailblazer
-              </p>
-              <p className="muted mt-7 max-w-[52ch] text-[0.98rem] leading-relaxed">
-                Two Atlanta multimillion-dollar entrepreneurs, one table, two
-                industries that do not usually share a room.
-              </p>
-            </div>
+
           </div>
         </Container>
       </section>
@@ -270,7 +263,7 @@ export default function MagnoliaPage() {
                   tone="light"
                   fields={FIELDS}
                   submitLabel="Request an invitation"
-                  subject="The Magnolia Brunch — Invitation Request (18 October 2026)"
+                  subject="The Magnolia Brunch — Invitation Request (15 November 2026)"
                   consent={
                     <>
                       Your details are used only to consider your invitation and
@@ -283,7 +276,7 @@ export default function MagnoliaPage() {
                     </>
                   }
                   successTitle="Your request has landed"
-                  successBody="Thank you. The guest list for 18 October is being curated now; you will hear from us personally within three business days either way."
+                  successBody="Thank you. The guest list for 15 November is being curated now; you will hear from us personally within three business days either way."
                 />
               </div>
             </div>

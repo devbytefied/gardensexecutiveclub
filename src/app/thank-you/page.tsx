@@ -105,7 +105,7 @@ export default async function ThankYouPage({
               href="/the-magnolia/"
               className="eyebrow link-underline !tracking-[0.16em] hover:text-rose-deep"
             >
-              The Magnolia, 18 October
+              The Magnolia, 15 November
             </Link>
           </div>
         </Container>

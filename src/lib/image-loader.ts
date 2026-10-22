@@ -36,7 +36,7 @@ type LoaderParams = {
 export default function geLoader({ src, width }: LoaderParams): string {
   // Anything that is not a managed photograph (SVG marks, external URLs)
   // passes straight through untouched.
-  if (/^(https?:)?\/\//.test(src) || /\.(svg|png|avif|webp|ico)$/i.test(src)) {
+  if (/^(https?:)?\/\//.test(src) || /\.(svg|png|jpe?g|avif|webp|ico)$/i.test(src)) {
     return src;
   }
 

@@ -93,7 +93,7 @@ export const navigation: NavGroup[] = [
     href: "/events/",
     children: [
       { label: "Upcoming Events", href: "/events/", note: "What is confirmed" },
-      { label: "The Magnolia", href: "/the-magnolia/", note: "18 October 2026" },
+      { label: "The Magnolia", href: "/the-magnolia/", note: "15 November 2026" },
       { label: "Annual Dinner", href: "/signature-events/annual-dinner/" },
       { label: "GEC Summit", href: "/signature-events/gec-summit/" },
       { label: "Facilitated Luncheons", href: "/signature-events/luncheons/" },

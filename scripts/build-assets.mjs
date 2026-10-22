@@ -90,7 +90,7 @@ const MEDIA = [
     // budget on /epk/, /events/ and the Magnolia page alike.
     quality: 58,
     maxWidth: 1280,
-    alt: "The Magnolia by Ebony OH — luxury tea society brunch, Sunday 18 October 2026, with special guest Carla Stephens of Rockstar Trucking Corporation",
+    alt: "The Magnolia by Ebony OH — luxury tea society brunch, Sunday 15 November 2026",
   },
   {
     slug: "shatter-field",

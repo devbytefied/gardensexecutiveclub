@@ -496,7 +496,7 @@ export default function EpkPage() {
         eyebrow="Next"
         title="Keep going"
         items={[
-          { label: "The Magnolia", href: "/the-magnolia/", note: "Sunday 18 October 2026" },
+          { label: "The Magnolia", href: "/the-magnolia/", note: "Sunday 15 November 2026" },
           { label: "Upcoming Events", href: "/events/", note: "What is confirmed" },
           { label: "Book the Venue", href: "/venue/", note: "The clubhouse, for hire" },
           { label: "Executive Membership", href: "/membership/", note: "Tiers and investment" },

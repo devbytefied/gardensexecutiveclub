@@ -390,9 +390,9 @@ export default function Home() {
             <div className="mt-14 grid gap-px border hair border bg-cream/20 lg:grid-cols-3">
               {[
                 {
-                  k: "18 Oct 2026",
+                  k: "15 Nov 2026",
                   t: "The Magnolia",
-                  b: "The Luxury Tea Society Brunch. Two women, two industries, one table — Dr. Ebony OH with Carla Stephens of Rockstar Trucking Corporation.",
+                  b: "The Luxury Tea Society Brunch. A curated table for women in business, leadership & ownership — hosted by Dr. Ebony OH.",
                   href: "/the-magnolia/",
                   cta: "Request an invitation",
                 },

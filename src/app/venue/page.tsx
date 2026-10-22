@@ -284,7 +284,7 @@ export default function VenuePage() {
         title="Keep going"
         items={[
           { label: "Upcoming Events", href: "/events/", note: "What is confirmed" },
-          { label: "The Magnolia", href: "/the-magnolia/", note: "Sunday 18 October 2026" },
+          { label: "The Magnolia", href: "/the-magnolia/", note: "Sunday 15 November 2026" },
           { label: "Book Dr. Ebony OH", href: "/epk/", note: "Keynotes & fireside chats" },
           { label: "Executive Membership", href: "/membership/", note: "Tiers and investment" },
           { label: "About Us", href: "/about/", note: "Mission and purpose" },
